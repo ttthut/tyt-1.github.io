@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HOUDINI on Pure theme for Hugo</title>
+    <link>https://tyt-1.github.io/categories/houdini/</link>
+    <description>Recent content in HOUDINI on Pure theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Nov 2019 16:44:42 +0900</lastBuildDate>
+    
+        <atom:link href="https://tyt-1.github.io/categories/houdini/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chop</title>
+      <link>https://tyt-1.github.io/2019/11/chop/</link>
+      <pubDate>Thu, 21 Nov 2019 16:44:42 +0900</pubDate>
+      
+      <guid>https://tyt-1.github.io/2019/11/chop/</guid>
+      <description>CHOPは音声処理やリギングやアニメーションなどで使われる また、頂点のアニメーションをMotion FXグラフで視覚化することができる 参考 https://houdini.prisms.xyz/wiki/index.php?title=HoudiniChops</description>
+    </item>
+    
+  </channel>
+</rss>
