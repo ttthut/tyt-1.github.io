@@ -5,10 +5,19 @@
     <link>https://tyt-1.github.io/categories/houdini/</link>
     <description>Recent content in Houdini on Pure theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 21 Nov 2019 16:44:42 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2019 17:24:50 +0900</lastBuildDate>
     
         <atom:link href="https://tyt-1.github.io/categories/houdini/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HoudiniでのBoneやRiggingのチュートリアル</title>
+      <link>https://tyt-1.github.io/2019/11/boneandriggingtutorial/</link>
+      <pubDate>Thu, 21 Nov 2019 17:24:50 +0900</pubDate>
+      
+      <guid>https://tyt-1.github.io/2019/11/boneandriggingtutorial/</guid>
+      <description>https://www.sidefx.com/learn/collections/cat-quad-rigging/</description>
+    </item>
     
     <item>
       <title>CHOP</title>

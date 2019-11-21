@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rigging on Pure theme for Hugo</title>
+    <link>https://tyt-1.github.io/tags/rigging/</link>
+    <description>Recent content in Rigging on Pure theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Nov 2019 17:24:50 +0900</lastBuildDate>
+    
+        <atom:link href="https://tyt-1.github.io/tags/rigging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HoudiniでのBoneやRiggingのチュートリアル</title>
+      <link>https://tyt-1.github.io/2019/11/boneandriggingtutorial/</link>
+      <pubDate>Thu, 21 Nov 2019 17:24:50 +0900</pubDate>
+      
+      <guid>https://tyt-1.github.io/2019/11/boneandriggingtutorial/</guid>
+      <description>https://www.sidefx.com/learn/collections/cat-quad-rigging/</description>
+    </item>
+    
+  </channel>
+</rss>
