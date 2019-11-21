@@ -3,13 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tyt-1.github.io/categories/</loc>
+    <loc>https://tyt-1.github.io/2019/11/chop/</loc>
+    <lastmod>2019-11-21T16:44:42+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tyt-1.github.io/posts/</loc>
+    <lastmod>2019-11-21T16:44:42+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://tyt-1.github.io/</loc>
+    <lastmod>2019-11-21T16:44:42+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tyt-1.github.io/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
