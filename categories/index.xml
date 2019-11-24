@@ -11,12 +11,21 @@
     
     
     <item>
-      <title>Houdini</title>
-      <link>https://tyt-1.github.io/categories/houdini/</link>
+      <title>HoudiniでのBoneやRiggingのチュートリアル</title>
+      <link>https://tyt-1.github.io/2019/11/boneandriggingtutorial/</link>
       <pubDate>Thu, 21 Nov 2019 17:24:50 +0900</pubDate>
       
-      <guid>https://tyt-1.github.io/categories/houdini/</guid>
-      <description></description>
+      <guid>https://tyt-1.github.io/2019/11/boneandriggingtutorial/</guid>
+      <description>https://www.sidefx.com/learn/collections/cat-quad-rigging/</description>
+    </item>
+    
+    <item>
+      <title>CHOP</title>
+      <link>https://tyt-1.github.io/2019/11/chop/</link>
+      <pubDate>Thu, 21 Nov 2019 16:44:42 +0900</pubDate>
+      
+      <guid>https://tyt-1.github.io/2019/11/chop/</guid>
+      <description>CHOPは音声処理やリギングやアニメーションなどで使われる また、頂点のアニメーションをMotion FXグラフで視覚化することができる 参考 https://houdini.prisms.xyz/wiki/index.php?title=HoudiniChops https://www.sidefx.com/ja/docs/houdini/nodes/chop/index.html</description>
     </item>
     
   </channel>
