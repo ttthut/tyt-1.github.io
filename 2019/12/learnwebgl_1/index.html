@@ -23,7 +23,7 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="webGL勉強その１ 三角ポリゴン表示まで import vertexShaderSource from &amp;#39;./shader/shader.vert&amp;#39;; import fragmentShaderSource from &amp;#39;./shader/shader.frag&amp;#39;; const canvas = document.getElementById(&amp;#34;glcanvas&amp;#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&amp;#34;webgl&amp;#34;) || canvas.getContext(&amp;#34;experimental-webgl&amp;#34;); // xy −1〜&#43;１のクリップ空間から0 ~ width heightに" />
+  <meta name="description" content="webGL勉強その１ 三角ポリゴン表示まで シェーダーはwebpackで管理している import vertexShaderSource from &amp;#39;./shader/shader.vert&amp;#39;; import fragmentShaderSource from &amp;#39;./shader/shader.frag&amp;#39;; const canvas = document.getElementById(&amp;#34;glcanvas&amp;#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&amp;#34;webgl&amp;#34;) || canvas.getContext(&amp;#34;experimental-webgl&amp;#34;); // xy −1〜&#43;" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
   <title>webGL三角ポリゴンまで - Pure theme for Hugo</title>
   
@@ -31,25 +31,25 @@
   <link rel="stylesheet" href="https://tyt-1.github.io/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css">
   <meta property="og:title" content="webGL三角ポリゴンまで" />
-<meta property="og:description" content="webGL勉強その１ 三角ポリゴン表示まで import vertexShaderSource from &#39;./shader/shader.vert&#39;; import fragmentShaderSource from &#39;./shader/shader.frag&#39;; const canvas = document.getElementById(&#34;glcanvas&#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&#34;webgl&#34;) || canvas.getContext(&#34;experimental-webgl&#34;); // xy −1〜&#43;１のクリップ空間から0 ~ width heightに" />
+<meta property="og:description" content="webGL勉強その１ 三角ポリゴン表示まで シェーダーはwebpackで管理している import vertexShaderSource from &#39;./shader/shader.vert&#39;; import fragmentShaderSource from &#39;./shader/shader.frag&#39;; const canvas = document.getElementById(&#34;glcanvas&#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&#34;webgl&#34;) || canvas.getContext(&#34;experimental-webgl&#34;); // xy −1〜&#43;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tyt-1.github.io/2019/12/learnwebgl_1/" />
 <meta property="article:published_time" content="2019-12-20T01:43:53+09:00" />
 <meta property="article:modified_time" content="2019-12-20T01:43:53+09:00" />
 <meta itemprop="name" content="webGL三角ポリゴンまで">
-<meta itemprop="description" content="webGL勉強その１ 三角ポリゴン表示まで import vertexShaderSource from &#39;./shader/shader.vert&#39;; import fragmentShaderSource from &#39;./shader/shader.frag&#39;; const canvas = document.getElementById(&#34;glcanvas&#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&#34;webgl&#34;) || canvas.getContext(&#34;experimental-webgl&#34;); // xy −1〜&#43;１のクリップ空間から0 ~ width heightに">
+<meta itemprop="description" content="webGL勉強その１ 三角ポリゴン表示まで シェーダーはwebpackで管理している import vertexShaderSource from &#39;./shader/shader.vert&#39;; import fragmentShaderSource from &#39;./shader/shader.frag&#39;; const canvas = document.getElementById(&#34;glcanvas&#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&#34;webgl&#34;) || canvas.getContext(&#34;experimental-webgl&#34;); // xy −1〜&#43;">
 
 
 <meta itemprop="datePublished" content="2019-12-20T01:43:53&#43;09:00" />
 <meta itemprop="dateModified" content="2019-12-20T01:43:53&#43;09:00" />
-<meta itemprop="wordCount" content="798">
+<meta itemprop="wordCount" content="818">
 
 
 
 <meta itemprop="keywords" content="," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="webGL三角ポリゴンまで"/>
-<meta name="twitter:description" content="webGL勉強その１ 三角ポリゴン表示まで import vertexShaderSource from &#39;./shader/shader.vert&#39;; import fragmentShaderSource from &#39;./shader/shader.frag&#39;; const canvas = document.getElementById(&#34;glcanvas&#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&#34;webgl&#34;) || canvas.getContext(&#34;experimental-webgl&#34;); // xy −1〜&#43;１のクリップ空間から0 ~ width heightに"/>
+<meta name="twitter:description" content="webGL勉強その１ 三角ポリゴン表示まで シェーダーはwebpackで管理している import vertexShaderSource from &#39;./shader/shader.vert&#39;; import fragmentShaderSource from &#39;./shader/shader.frag&#39;; const canvas = document.getElementById(&#34;glcanvas&#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&#34;webgl&#34;) || canvas.getContext(&#34;experimental-webgl&#34;); // xy −1〜&#43;"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -278,7 +278,8 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       <p>webGL勉強その１<br />
-三角ポリゴン表示まで</p>
+三角ポリゴン表示まで<br />
+シェーダーはwebpackで管理している</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">vertexShaderSource</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./shader/shader.vert&#39;</span>;
 <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">fragmentShaderSource</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./shader/shader.frag&#39;</span>;
