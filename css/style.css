@@ -5666,7 +5666,7 @@ pre:before {
   border-top-right-radius: 4px;
 }
 
-pre:after {
+/* pre:after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -5678,7 +5678,7 @@ pre:after {
   margin-top: 11px;
   -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
   box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-}
+} */
 
 .highlight pre {
   border: none;
