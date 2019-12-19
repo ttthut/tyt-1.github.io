@@ -42,7 +42,7 @@
 
 <meta itemprop="datePublished" content="2019-12-20T01:43:53&#43;09:00" />
 <meta itemprop="dateModified" content="2019-12-20T01:43:53&#43;09:00" />
-<meta itemprop="wordCount" content="818">
+<meta itemprop="wordCount" content="991">
 
 
 
@@ -281,7 +281,8 @@
 三角ポリゴン表示まで<br />
 シェーダーはwebpackで管理している</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">vertexShaderSource</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./shader/shader.vert&#39;</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">vertexShaderSource</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./shader/shader.vert&#39;</span>;
 <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">fragmentShaderSource</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./shader/shader.frag&#39;</span>;
 
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">canvas</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;glcanvas&#34;</span>);
@@ -358,7 +359,31 @@
 </span><span style="color:#75715e"></span>    <span style="color:#ae81ff">0</span>,            <span style="color:#75715e">// offset
 </span><span style="color:#75715e"></span>    <span style="color:#ae81ff">3</span>             <span style="color:#75715e">// 頂点数
 </span><span style="color:#75715e"></span>);
+    
 </code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">    
+<span style="color:#75715e">// VBOから渡される情報(attribute),頂点毎に情報を持っている
+</span><span style="color:#75715e"></span>attribute vec4 a_position;
+
+<span style="color:#75715e">// uniform https://thebookofshaders.com/03/?lan=jp
+</span><span style="color:#75715e">// CPUからGPUへ送られる,読み取り専用の修飾子である
+</span><span style="color:#75715e">// 時間や描画サイズやマウスの位置などに使われることが多い
+</span><span style="color:#75715e">// uniform mat4 u_mvpMatrix;
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// varying vertexShaderからfragmentShaderへ渡す修飾子である
+</span><span style="color:#75715e">// varying vec4 v_Color;
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>) {
+    <span style="color:#75715e">// vColor = color;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// gl_Position = u_mvpMatrix * vec4(a_position, 1.);
+</span><span style="color:#75715e"></span>    gl_Position <span style="color:#f92672">=</span> a_position;
+}    </code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">    
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>) {
+    gl_FragColor <span style="color:#f92672">=</span> vec4(<span style="color:#ae81ff">0.9137</span>, <span style="color:#ae81ff">0.6627</span>, <span style="color:#ae81ff">0.6627</span>, <span style="color:#ae81ff">1.0</span>);
+}     </code></pre></div>
 
     </div>
     <div class="article-footer">
