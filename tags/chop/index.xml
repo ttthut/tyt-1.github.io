@@ -16,7 +16,7 @@
       <pubDate>Fri, 20 Dec 2019 01:43:53 +0900</pubDate>
       
       <guid>https://tyt-1.github.io/2019/12/learnwebgl_1/</guid>
-      <description>webGL勉強その１ 三角ポリゴン表示まで シェーダーはwebpackで管理している import vertexShaderSource from &amp;#39;./shader/shader.vert&amp;#39;; import fragmentShaderSource from &amp;#39;./shader/shader.frag&amp;#39;; const canvas = document.getElementById(&amp;#34;glcanvas&amp;#34;); canvas.width = 500; canvas.height = 500; const gl = canvas.getContext(&amp;#34;webgl&amp;#34;) || canvas.getContext(&amp;#34;experimental-webgl&amp;#34;); // xy −1〜+</description>
+      <description>webGL勉強その１ 三角ポリゴン表示まで シェーダーはwebpackで管理している 流れを理解したいのでべた書きだ import vertexShaderSource from &amp;#39;./shader/shader.vert&amp;#39;; import fragmentShaderSource from &amp;#39;./shader/shader.frag&amp;#39;; const canvas = document.getElementById(&amp;#34;glcanvas&amp;#34;); canvas.width = 500;</description>
     </item>
     
     <item>
